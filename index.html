@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de compras</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/js/main.js" type="module" defer></script>
+
+</head>
+<body>
+    <!-- loader -->
+    <div class="loader">
+        <div class="loder__container">
+            <span></span>
+        </div>
+    </div>
+    <!-- header -->
+    <header class="header">
+        <nav class="nav cantainer">
+        <a href="/" class="nav__logo">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48.92 56.48" class="logo--icon">
+                <path fill="currentColor" d="M28.58,15.39H25.16L35.78,36H31.49L20.67,15.71,8.23,38.82H18.94l3-5.43h-3.4l-1.47,2.54h-4l2.69-5.09H25.85l4.28,8H40.67ZM17.23,28.21l3.57-6.6,3.57,6.6Z">
+                </path>
+            </svg>
+        </a>
+            <div class="nav__menu">
+                <button type="button" class="nav__btn btn--close">
+                    <i class='bx bx-x-circle'></i>
+                </button>
+
+                <ul class="nav__list">
+                    <li class="nav__items">
+                        <a href="#" class="nav__link">Inicio</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#" class="nav__link">Productos</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav__buttons">
+                <button type="button" class="nav__btn btn--cart">
+                    <i class='bx bx-cart-download'></i>
+                    <span class="notify">0</span>
+                </button>
+                <button type="button" class="nav__btn btn--menu">
+                    <i class='bx bx-menu-alt-left'></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- main -->
+    <main class="main">
+        <section class="products section">
+            <h2 class="products__title section--title">Productos</h2>
+            <div class="products__container container"></div>
+        </section>
+    </main>
+
+    <!-- cart -->
+    <div class="cart">
+        <div class="cart__container">
+            <div class="cart__header">
+                <h3 class="cart__title">Carrito de compras</h3>
+                <button type="button" class="cart__btn btn--close">
+                    <i class='bx bx-x'></i>
+                </button>
+            </div>
+            <div class="cart__body"></div>
+            <div class="cart__footer">
+                <div class="cart__count">
+                    <span class="cart__count--text">Articulos:</span>
+                    <span class="cart__count--item">0</span>
+                </div>
+                <div class="cart__total">
+                    <span class="cart__total--text">Total: $</span>
+                    <span class="cart__total--item">$0</span>
+                </div>
+                <button type="button" class="cart__btn btn--buy">Comprar</button>
+            </div>
+        </div>
+    </div>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Gracias por su compra</p>
+        </div>
+      </div>
+      
+
+    <!-- foother -->
+    <footer class="footer--section">
+        <div class="footer__container container">
+            <div class="footer__top">
+                <div class="footer__left">
+                    <h3 class="footer__title">Sobre nosotros</h3>
+                    <p class="footer__text">Mi nombre es Gerson Llamas soy Ingeniero industrial, originario de Guadalajara Jalisco. 
+                        Somos una empresa dedicada a la industria textil de alta gama, con modelos de camiseta poco ortodoxos, que pretenden romper con los estereo tipos.
+                    </p>
+                </div>
+                <div class="footer__right">
+                        <h3 class="footer__title">Redes sociales</h3>
+                        <ul class="footer__social">
+                            <li class="footer__item">
+                                <a href="https://www.facebook.com/Gerson279?locale=es_LA" class="footer__link" target="_blank">
+                                    <i class='bx bxl-facebook-circle'></i>
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="https://www.instagram.com/gersonllamas/" class="footer__link" target="_blank">
+                                    <i class='bx bxl-instagram-alt' ></i>
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="https://api.whatsapp.com/send?phone=3325930840&text=Hola%2C%20buen%20día.%20Me%20gustaría%20conocer%20más%20de%20sus%20productos." class="footer__link" target="_blank"><i class='bx bxl-whatsapp'></i>
+                                </a>
+                            </li>
+                        </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__text">Todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
